@@ -9,8 +9,7 @@ export function Hero() {
           <div className={styles.introCopy}>
             <p className={styles.role}>AI Product · Creative Developer · AIGC</p>
             <p className={styles.bio}>
-              I design and build thoughtful digital products at the intersection
-              of artificial intelligence, useful tools, and visual culture.
+              我关注 AI 与数字产品，也喜欢把想法做成真正能用、看起来舒服的工具。
             </p>
           </div>
         </div>
@@ -27,11 +26,11 @@ export function Hero() {
             <span className={styles.scrollArrow} aria-hidden="true">
               ↓
             </span>
-            Selected Projects
+            精选项目
           </a>
           <p className={styles.availability}>
             <span className={styles.availabilityDot} aria-hidden="true" />
-            Exploring what AI can make useful
+            正在探索 AI 能真正解决什么
           </p>
         </div>
       </div>

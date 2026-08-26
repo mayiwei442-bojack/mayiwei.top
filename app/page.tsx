@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <a className="skip-link" href="#content">
-        Skip to content
+        跳到主要内容
       </a>
       <Header />
       <main id="content">

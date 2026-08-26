@@ -13,14 +13,13 @@ export function Projects() {
         <div>
           <p className={styles.eyebrow}>Selected work</p>
           <h2 id="projects-title" className={styles.sectionTitle}>
-            Projects
+            项目
           </h2>
         </div>
         <p className={styles.sectionNote}>
-          A growing collection of tools and experiments built to make digital
-          life a little more human.
+          这里收录了我做过的一些工具和实验。它们解决不同的问题，也记录了我的思考。
         </p>
-        <p className={styles.projectCount} aria-label="3 selected projects">
+        <p className={styles.projectCount} aria-label="3 个精选项目">
           03
         </p>
       </header>

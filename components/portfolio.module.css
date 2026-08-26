@@ -115,11 +115,10 @@
 
 .bio {
   color: #272724;
-  font-family: var(--font-newsreader), Georgia, serif;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: clamp(1.42rem, 2.25vw, 2.25rem);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.08;
+  font-weight: 500;
+  line-height: 1.22;
   text-wrap: balance;
 }
 
@@ -194,9 +193,8 @@
   align-items: center;
   gap: 0.55rem;
   color: var(--muted);
-  font-family: var(--font-newsreader), Georgia, serif;
-  font-size: 0.98rem;
-  font-style: italic;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 0.82rem;
 }
 
 .availabilityDot {
@@ -232,10 +230,9 @@
 .sectionNote {
   max-width: 26rem;
   color: #4f4e4a;
-  font-family: var(--font-newsreader), Georgia, serif;
-  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
-  font-style: italic;
-  line-height: 1.15;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
+  line-height: 1.5;
 }
 
 .projectCount {
@@ -308,26 +305,6 @@
   letter-spacing: 0.1em;
 }
 
-.status {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.55rem 0.75rem;
-  border: 1px solid rgba(21, 21, 21, 0.35);
-  border-radius: 999px;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.statusDot {
-  width: 0.38rem;
-  height: 0.38rem;
-  border-radius: 50%;
-  background: #e3412f;
-}
-
 .cardMain {
   display: grid;
   gap: clamp(1.8rem, 4vw, 3.8rem);
@@ -353,9 +330,9 @@
 
 .cardDescription {
   max-width: 31rem;
-  font-family: var(--font-newsreader), Georgia, serif;
-  font-size: clamp(1.15rem, 1.55vw, 1.45rem);
-  line-height: 1.18;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: clamp(1rem, 1.35vw, 1.25rem);
+  line-height: 1.5;
 }
 
 .cardBottom {
@@ -804,9 +781,8 @@
 
 .footerStatement span {
   color: #f0c84e;
-  font-family: var(--font-newsreader), Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-weight: 650;
 }
 
 .footerLinks {
@@ -831,9 +807,8 @@
 
 .contactPlaceholder span {
   color: rgba(241, 240, 234, 0.48);
-  font-family: var(--font-newsreader), Georgia, serif;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 0.82rem;
-  font-style: italic;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;

@@ -1,5 +1,3 @@
-export type ProjectStatus = "live" | "development";
-
 export type ProjectVisual = "editor" | "campus" | "kitchen";
 
 export type Project = {
@@ -11,7 +9,6 @@ export type Project = {
   image?: string;
   liveUrl?: string;
   repoUrl: string;
-  status?: ProjectStatus;
   visual: ProjectVisual;
 };
 
@@ -19,20 +16,20 @@ export const projects: Project[] = [
   {
     number: "01",
     title: "Picture Editor Skill",
-    description:
-      "An AI-powered image editing skill currently in development.",
+    description: "一款由 AI 驱动的图片编辑 Skill。",
     tags: ["AI", "Image Editing", "Skill"],
+    liveUrl: "https://picture-editor-skill.vercel.app/",
     repoUrl:
       "https://github.com/mayiwei442-bojack/picture-editor-skill",
-    status: "development",
     visual: "editor",
   },
   {
     number: "02",
     title: "Campus Connect",
     description:
-      "A campus social connector designed to turn vague social intentions into real-world activities and connections.",
+      "一款校园社交连接器，把模糊的社交意愿变成真实的线下活动与连接。",
     tags: ["Next.js", "TypeScript", "Supabase", "Blender"],
+    liveUrl: "https://campus-connect-six-rho.vercel.app/",
     repoUrl: "https://github.com/mayiwei442-bojack/campus-connect",
     visual: "campus",
   },
@@ -41,8 +38,9 @@ export const projects: Project[] = [
     title: "Yanhuo Youpu",
     subtitle: "烟火有谱",
     description:
-      "An AI-powered kitchen assistant that helps users turn available ingredients into practical cooking ideas.",
+      "一款由 AI 驱动的厨房助手，根据手边食材给出实用的做饭思路。",
     tags: ["JavaScript", "CSS", "AI"],
+    liveUrl: "https://yanhuo-youpu.vercel.app/#/home",
     repoUrl: "https://github.com/mayiwei442-bojack/yanhuo-youpu",
     visual: "kitchen",
   },

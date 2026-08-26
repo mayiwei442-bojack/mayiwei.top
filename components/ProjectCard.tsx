@@ -9,7 +9,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const href = project.liveUrl ?? project.repoUrl;
-  const destination = project.liveUrl ? "Live project" : "GitHub repository";
+  const destination = project.liveUrl ? "线上项目" : "GitHub 仓库";
 
   return (
     <a
@@ -17,18 +17,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`${project.title} — open ${destination} in a new tab`}
+      aria-label={`在新标签页打开 ${project.title} ${destination}`}
     >
       <article className={styles.cardInner}>
         <div className={styles.cardCopy}>
           <div className={styles.cardMeta}>
             <span className={styles.projectNumber}>{project.number}</span>
-            {project.status === "development" && (
-              <span className={styles.status}>
-                <span className={styles.statusDot} aria-hidden="true" />
-                In Development
-              </span>
-            )}
           </div>
 
           <div className={styles.cardMain}>
@@ -42,7 +36,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </div>
 
           <div className={styles.cardBottom}>
-            <ul className={styles.tags} aria-label="Technologies">
+            <ul className={styles.tags} aria-label="技术标签">
               {project.tags.map((tag) => (
                 <li key={tag}>{tag}</li>
               ))}
@@ -61,7 +55,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <Image
               className={styles.projectImage}
               src={project.image}
-              alt={`${project.title} project preview`}
+              alt={`${project.title} 项目预览`}
               fill
               sizes="(max-width: 767px) 100vw, 56vw"
             />

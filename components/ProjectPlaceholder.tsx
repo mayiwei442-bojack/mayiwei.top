@@ -11,7 +11,7 @@ export function ProjectPlaceholder({ project }: ProjectPlaceholderProps) {
       <div
         className={`${styles.placeholder} ${styles.editorVisual}`}
         role="img"
-        aria-label="Abstract preview of an AI image editing workspace"
+        aria-label="AI 图片编辑工作区示意图"
       >
         <div className={styles.editorWindow}>
           <div className={styles.windowBar}>
@@ -49,7 +49,7 @@ export function ProjectPlaceholder({ project }: ProjectPlaceholderProps) {
       <div
         className={`${styles.placeholder} ${styles.campusVisual}`}
         role="img"
-        aria-label="Abstract preview of a campus social connection app"
+        aria-label="校园社交连接应用示意图"
       >
         <div className={styles.campusLabel}>Find your people / today</div>
         <div className={styles.mapLines} aria-hidden="true">
@@ -82,7 +82,7 @@ export function ProjectPlaceholder({ project }: ProjectPlaceholderProps) {
     <div
       className={`${styles.placeholder} ${styles.kitchenVisual}`}
       role="img"
-      aria-label="Abstract preview of an AI kitchen assistant"
+      aria-label="AI 厨房助手应用示意图"
     >
       <div className={styles.kitchenHeader}>
         <span>今日食材</span>
