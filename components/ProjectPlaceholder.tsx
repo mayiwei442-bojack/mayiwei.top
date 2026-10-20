@@ -20,7 +20,7 @@ export function ProjectPlaceholder({ project }: ProjectPlaceholderProps) {
               <span />
               <span />
             </div>
-            <span>PICTURE / 001</span>
+            <span>IMAGE FIELD / 001</span>
             <span>82%</span>
           </div>
           <div className={styles.editorBody}>
@@ -72,6 +72,97 @@ export function ProjectPlaceholder({ project }: ProjectPlaceholderProps) {
           <div className={styles.activityMeta}>
             <span>East Gate</span>
             <span>12 going</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (project.visual === "meal") {
+    return (
+      <div
+        className={`${styles.placeholder} ${styles.mealVisual}`}
+        role="img"
+        aria-label="麦麦点餐台示意图：查询菜单与优惠，按偏好推荐，确认后下单"
+      >
+        <div className={styles.mealHeading} aria-hidden="true">
+          <span>MCD / MEAL PLANNER</span>
+          <strong>
+            Your taste.
+            <br />
+            Your meal.
+          </strong>
+        </div>
+        <div className={styles.mealIllustration} aria-hidden="true">
+          <div className={styles.fries}>
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
+          <div className={styles.burger}>
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
+        </div>
+        <div className={styles.mealTicket} aria-hidden="true">
+          <p>麦麦点餐台</p>
+          <div className={styles.mealSteps}>
+            <span>查询菜单</span>
+            <span>按需推荐</span>
+            <span>确认下单</span>
+          </div>
+          <div className={styles.mealTicketFooter}>
+            <span>口味 · 预算 · 优惠</span>
+            <span>MCP ↗</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (project.visual === "monitor") {
+    return (
+      <div
+        className={`${styles.placeholder} ${styles.monitorVisual}`}
+        role="img"
+        aria-label="Tibo 监控看板示意图：追踪 X 动态，分析 Codex 重置相关信息，查看中文摘要"
+      >
+        <div className={styles.monitorWindow} aria-hidden="true">
+          <div className={styles.monitorBar}>
+            <span>TIBO / MONITOR</span>
+            <span>PREVIEW</span>
+          </div>
+          <div className={styles.monitorBody}>
+            <p className={styles.monitorEyebrow}>CODEX RESET SIGNALS</p>
+            <strong className={styles.monitorTitle}>
+              Follow the
+              <br />
+              signal.
+            </strong>
+            <div className={styles.signalChart}>
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+              <span />
+            </div>
+            <div className={styles.monitorSummary}>
+              <span>动态追踪</span>
+              <span>中文摘要</span>
+              <span>重置信息</span>
+            </div>
+            <p className={styles.monitorPipeline}>X → DeepSeek → Dashboard</p>
           </div>
         </div>
       </div>

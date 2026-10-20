@@ -19,14 +19,17 @@ export function Projects() {
         <p className={styles.sectionNote}>
           这里收录了我做过的一些工具和实验。它们解决不同的问题，也记录了我的思考。
         </p>
-        <p className={styles.projectCount} aria-label="3 个精选项目">
-          03
+        <p
+          className={styles.projectCount}
+          aria-label={`${projects.length} 个精选项目`}
+        >
+          {String(projects.length).padStart(2, "0")}
         </p>
       </header>
 
       <div className={styles.projectList}>
         {projects.map((project) => (
-          <ProjectCard key={project.number} project={project} />
+          <ProjectCard key={project.repoUrl} project={project} />
         ))}
       </div>
     </section>

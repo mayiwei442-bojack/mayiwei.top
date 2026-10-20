@@ -7,13 +7,21 @@ type ProjectCardProps = {
   project: Project;
 };
 
+const cardStyles: Record<Project["visual"], string> = {
+  editor: styles.cardEditor,
+  campus: styles.cardCampus,
+  kitchen: styles.cardKitchen,
+  meal: styles.cardMeal,
+  monitor: styles.cardMonitor,
+};
+
 export function ProjectCard({ project }: ProjectCardProps) {
   const href = project.liveUrl ?? project.repoUrl;
   const destination = project.liveUrl ? "线上项目" : "GitHub 仓库";
 
   return (
     <a
-      className={`${styles.projectCard} ${styles[`card${project.number}`]}`}
+      className={`${styles.projectCard} ${cardStyles[project.visual]}`}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
